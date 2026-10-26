@@ -1,0 +1,18 @@
+# Lokalna paczka demonstracyjna zawiera konfigurację połączenia z bazą.
+.demo/
+.tools/
+
+# Wyniki publikacji Azure
+publication-azure/
+publication-azure-vs-check/
+rogbau-azure.zip
+
+**/.vs/
+**/bin/
+**/obj/
+**/node_modules/
+**/dist/
+*.user
+**/appsettings*.json
+**/.env
+**/.env.*

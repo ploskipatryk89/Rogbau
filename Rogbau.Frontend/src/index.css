@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@page {
+  size: A4;
+  margin: 15mm;
+}
+
+@media print {
+  /* Portal renders the document outside the app layout. */
+  body:has(> .transfer-print-document) > :not(.transfer-print-document) {
+    display: none !important;
+  }
+
+  body:has(> .transfer-print-document) {
+    margin: 0;
+    background: white;
+  }
+}
+
+@layer base {
+  button:not(:disabled) {
+    cursor: pointer;
+  }
+}
